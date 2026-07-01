@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact | CEG</title>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            omega: {
+              bg: '#0f0f0f',
+              surface: '#1a1a1a',
+              accent: '#8ab4f8',
+              text: '#e8eaed',
+              muted: '#9aa0a6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #0f0f0f; color: #e8eaed; font-family: sans-serif; }
+    .glass { background: rgba(33,33,33,0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.07); }
+    .nav-link { color: #9aa0a6; font-size: 0.875rem; transition: color 0.2s; }
+    .nav-link:hover { color: #8ab4f8; }
+  </style>
+
+</head>
+<body class="pt-24">
+  
+  <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <div class="font-bold tracking-tighter text-xl">CEG <span class="text-omega-accent">GLOBAL</span></div>
+      <div class="flex gap-6">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+<main class="max-w-xl mx-auto px-6">
+    <h1 class="text-4xl font-bold mb-4 text-center">Mission <span class="text-omega-accent">Control</span></h1>
+    <p class="text-center text-omega-muted mb-12">Reach out for collaborations, investment, or technical inquiries.</p>
+    
+    <div class="glass p-8 rounded-3xn">
+        <div class="space-y-6">
+            <div>
+                <label class="block text-xs font-bold text-omega-muted uppercase mb-2">Direct Email</label>
+                <a href="mailto:centennial.empire.official@gmail.com" class="text-xl font-medium text-omega-accent hover:underline block truncate">centennial.empire.official@gmail.com</a>
+            </div>
+            <div>
+                <label class="block text-xs font-bold text-omega-muted uppercase mb-2">Location</label>
+                <p class="text-lg">Odisha Operation Center, Sunaposi</p>
+            </div>
+            <div class="pt-6 border-t border-white/5">
+                <p class="text-sm text-omega-muted">Centennial Sentinel is active. All emails are processed instantly by our AI auto-responder.</p>
+            </div>
+        </div>
+    </div>
+  </main>
+  
+  <footer class="py-12 border-t border-white/5 mt-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-omega-muted text-xs">© 2026 Centennial Empire Global. Managed by Digital CEO.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
