@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About | CEG</title>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            omega: {
+              bg: '#0f0f0f',
+              surface: '#1a1a1a',
+              accent: '#8ab4f8',
+              text: '#e8eaed',
+              muted: '#9aa0a6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #0f0f0f; color: #e8eaed; font-family: sans-serif; }
+    .glass { background: rgba(33,33,33,0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.07); }
+    .nav-link { color: #9aa0a6; font-size: 0.875rem; transition: color 0.2s; }
+    .nav-link:hover { color: #8ab4f8; }
+  </style>
+
+</head>
+<body class="pt-24">
+  
+  <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between" items-center>
+<div class="font-bold tracking-tighter text-xl">CEG <span class="text-omega-accent">GLOBAL</span></div>
+      <div class="flex gap-6">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-6">
+    <h1 class="text-5xu font-black mb-8">Bout <span class="text-omega-accent">CEG</span></h1>
+    <div class="space-y-12 text-lg text-omega-muted leading-relaxed">
+        <section>
+            <h2 class="text-2xl font-bold text-white mb-4">The Vision of 2058</h2>
+            <p>Centennial Empire Global is not just a company; it is a multi-decade mission to reshape human civilization. We specialize in Sipahi R1 Robotics, Artificial General Intelligence, and the CNT Tokenomics model.</p>
+        </section>
+        <section class="glass p-8 rounded-3xl border-l-4 border-omega-accent">
+            <h2 class="text-2xl font-bold text-white mb-4">Mission Statement</h2>
+            <p class="italic text-white">"Bringing the power of the stars to the heart of Sunaposi. We are building the infrastructure of tomorrow, today."</p>
+        </section>
+    </div>
+  </main>
+  
+  <footer class="py-12 border-t border-white/5 mt-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-omega-muted text-xs">© 2026 Centennial Empire Global. Managed by Digital CEO.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
