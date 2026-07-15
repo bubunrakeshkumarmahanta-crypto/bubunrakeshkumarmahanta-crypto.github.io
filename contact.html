@@ -1,77 +1,61 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact | CEG</title>
-  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            omega: {
-              bg: '#0f0f0f',
-              surface: '#1a1a1a',
-              accent: '#8ab4f8',
-              text: '#e8eaed',
-              muted: '#9aa0a6'
-            }
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    body { background-color: #0f0f0f; color: #e8eaed; font-family: sans-serif; }
-    .glass { background: rgba(33,33,33,0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.07); }
-    .nav-link { color: #9aa0a6; font-size: 0.875rem; transition: color 0.2s; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mission Control</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;700&display=swap');
+    body { font-family: 'Google Sans', sans-serif; background: #0f0f0f; color: #e8eaed; }
+    .glass { background: rgba(33, 33, 33, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    .btn-primary { background: linear-gradient(135deg, #4285f4, #8ab4f8); color: white; transition: transform 0.2s; }
+    .btn-primary:hover { transform: scale(1.05); }
+    .nav-link { color: #9aa0a6; transition: color 0.2s; }
     .nav-link:hover { color: #8ab4f8; }
-  </style>
+</style>
 
 </head>
-<body class="pt-24">
-  
-  <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4">
-    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
-      <div class="font-bold tracking-tighter text-xl">CEG <span class="text-omega-accent">GLOBAL</span></div>
-      <div class="flex gap-6">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="profile.html" class="nav-link">Profile</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-<main class="max-w-xl mx-auto px-6">
-    <h1 class="text-txl font-bold mb-4 text-center">Mission <span class="text-omega-accent">Control</span></h1>
-    <p class="text-center text-omega-muted mb-12">Reach out for collaborations, investment, or technical inquiries.</p>
+<body class="pt-24" min-h-screen flex flex-col">
     
-    <div class="glass p-8 rounded-3xn">
-        <div class="space-y-6">
-            <div>
-                <label class="block text-xs font-bold text-omega-muted uppercase mb-2">Direct Email</label>
-                <a href="mailto:centennial.empire.official@gmail.com" class="text-xl font-medium text-omega-accent hover:underline block truncate">centennial.empire.official@gmail.com</a>
-            </div>
-            <div>
-                <label class="block text-xs font-bold text-omega-muted uppercase mb-2">Location</label>
-                <p class="text-lg">Odisha Operation Center, Sunaposi</p>
-            </div>
-            <div class="pt-6 border-t border-white/5">
-                <p class="text-sm text-omega-muted">Centennial Sentinel is active. All emails are processed instantly by our AI auto-responder.</p>
-            </div>
+<nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full btn-primary flex items-center justify-center text-sm font-bold shadow-lg">C</div>
+            <span class="font-bold tracking-tight text-lg">CEG <span class="text-[#8ab4f8]">GLOBAL</span></span>
+        </div>
+        <div class="flex gap-8 items-center">
+            <a href="index.html" class="nav-link text-sm">Home</a>
+            <a href="about.html" class="nav-link text-sm">About</a>
+            <a href="profile.html" class="nav-link text-sm">Profile</a>
+            <a href="contact.html" class="nav-link text-sm">Contact</a>
+            <a href="https://omega-super-app.preview.emergentagent.com/" class="btn-primary px-5 py-2 rounded-full text-xs font-bold shadow-md">Open App</a>
         </div>
     </div>
-  </main>
-  
-  <footer class="py-12 border-t border-white/5 mt-20">
+</nav>
+
+    <main class="flex-grow max-w-2xl mx-auto px-6 py-12 w-full text-center">
+        <h1 class="text-4xl font-black mb-4 tracking-tighter">Contact <span class="text-[#8ab4f8]">Mission Control</span></h1>
+        <p class="text-[#9aa0a6] mb-12">Direct communications with Centennial Empire Global.</p>
+        
+        <div class="glass p-10 rounded-3{l shadow-2xl space-y-8">
+            <div>
+                <label class="block text-xs font-bold text-[#9aa0a6] uppercase mb-2">Official Business Email</label>
+                <a href="mailto:centennial.empire.official@gmail.com" class="text-2xl font-bold text-[#8ab4f8] hover:underline break-all">centennial.empire.official@gmail.com</a>
+            </div>
+            <div class="pt-8 border-t border-white/5">
+                <p class="text-sm text-[9aa0a6]">The <strong>Centennial Sentinel</strong> AI is active and monitoring all incoming transmissions for prioritized response.</p>
+            </div>
+        </div>
+    </main>
+    
+<footer class="py-12 border-t border-white/5 mt-20">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <p class="text-omega-muted text-xs">© 2026 Centennial Empire Global. Managed by Digital CEO.</p>
+        <p class="text-[#9aa0a6] text-xs">© 2026 Centennial Empire Global. Developed by Digital CEO Team.</p>
     </div>
-  </footer>
+</footer>
 
 </body>
 </html>
